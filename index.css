@@ -1,0 +1,456 @@
+#wrap{
+    padding: 20px 10px 10px  10px;
+    min-width: 1000px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+#lunbotu{
+    width: 100%;
+    height: 640px;
+}
+#top{
+    position:absolute;
+	top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+    height: 640px;
+    background-color:rgba(236, 230, 230,0.3);
+}
+#tb{
+    position: relative;
+}
+#images-logo{
+    position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+#logo div{
+    width: 350px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 20px;
+    position:absolute;
+	top:60%;
+    left:50%;
+    transform:translate(-50%,0%);
+    color: rgb(126, 139, 218);
+}
+#main{
+    margin:60px auto 10px auto ;
+    border-top:solid rgba(27, 27, 27, 0.7);
+}
+#pinpai{
+    position: relative;
+    top:-28px;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    background-color: burlywood;
+    border-radius: 30px;
+}
+#tese{
+    margin: 0 auto;
+    padding: 50px;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+#test1{
+    margin: 10px 20px;
+    height: 460px;
+    width: 300px;
+    background-color: rgb(252, 151, 206);
+    border:10px solid rgb(252, 128, 196);
+    border-radius: 10px;
+    opacity: .9;
+    cursor: pointer;
+}
+#test1:hover{
+    position: relative;
+    top:-20px;
+    margin: 10px 10px;
+    height: 480px;
+    width: 300px;
+    background-color: rgb(235, 137, 190);
+    border:20px solid rgb(241, 111, 183);
+    border-radius: 10px;
+    opacity: 1;
+    cursor: pointer;
+}
+#test2{
+    margin: 10px 20px;
+    height: 290px;
+    width: auto;
+}
+#test2 h2,#test2 h3,#test2 p{
+    text-align: center;
+    color: rgb(236, 227, 227);
+}
+#ts,#ts img{
+    margin: 0 auto;
+    width: 150px;
+    height: 140px;
+}
+#xinpintuijian{
+    margin: 0 auto;
+    padding: 50px;
+    width: 1000px;
+    height: 640px;
+    display: flex;
+    flex-direction:column;
+}
+.xinpin-img{
+    margin: 15px auto;
+    height: 200px;
+    width: 200px;
+    border: 15px solid rgb(228, 132, 161);
+    border-radius: 50%;
+    transition: 1s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.xinpin-img img{
+    height: 200px;
+    width: 200px;
+}
+.xinpin-img:hover{
+    transform: rotateY(180deg);
+}
+#xinpin-1{
+    margin: 10px 20px;
+    padding: 0px 75px;
+    height: 300px;
+    width: 810px;
+    display: flex;
+    flex-direction:row;
+}
+#div-1{
+    margin: 10px;
+    width: 250px;
+    height: 280px;
+}
+#xinpin-div{
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+#foot{
+    height: 230px;
+    line-height: 230px;
+    background-color: rgb(164, 188, 209);
+}
+#foot-main{
+    margin:20px auto 10px auto ;
+    border-top:solid rgba(27, 27, 27, 0.7);
+}
+#foot-div{
+    margin: 0 auto;
+    width: 1000px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+#foot-div div{
+    margin: 0 auto;
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+}
+#board {
+    position: fixed;
+    top: 40%;
+    right: 0px;
+    width: 100px;
+    height: 150px;
+    background-color: rgb(247, 162, 232);           
+    font-family: sans-serif;            
+    color: rgb(91, 252, 17);            
+    font-size: 25px;           
+    padding: 10px;            
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;           
+}
+#board  div{
+    margin: 0px auto;
+    width: 100px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/caipu.jpg);
+    border-radius: 10px;
+    background-repeat: no-repeat; 
+}
+#board  div span{
+    margin-top: 12px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+#board.active {
+    color: rgb(245, 96, 208);
+}
+
+.closePopUpBtn{
+    width:60px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #c9c9c9;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #eee;
+}
+.openPopUpBtn{
+    margin-top:50px;
+}
+.closePopUpBtn:hover{
+    background-color: #eee;
+    cursor:pointer;
+}
+
+/*弹框样式*/
+.popUp{
+    width:1000px;
+    height:550px;
+    text-align: center;
+    background-color: #FFFeee;
+    background-image: url(../images/bg.jpg);
+    border:1px solid #ccc;
+    box-shadow: 1px 1px 1px 1px rgb(124, 120, 120);            
+    position:fixed;
+    left:50%;
+    margin-top: -60px;
+    margin-left:-500px;
+    opacity: 0; /* 透明度为0 */
+}
+
+.closePopUpBtn{
+    position: fixed;
+    bottom:20px;
+    left:50%;
+    transform:translate(-50%);
+}
+
+/*定义打开弹窗动画*/
+#showCont{
+    animation: showPopUp 1s;
+    animation-fill-mode: forwards; /*保持动画后的状态*/
+}
+
+/*定义关闭弹窗动画*/
+#hiddenCont{
+    animation: hiddenPopUp 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showPopUp{
+    0%{
+        opacity: 0;
+        top:-60%;
+        transform: rotateZ(0deg);
+        
+    }
+    50%{
+        transform: rotateZ(-10deg);
+        -webkit-transform: rotateZ(-10deg);
+        -moz-transform: rotateZ(-10deg);
+        -ms-transform: rotateZ(-10deg);
+        -o-transform: rotateZ(-10deg);
+}
+    100%{
+        opacity: 1;
+        top:20%;
+        transform: rotateZ(0deg);
+     
+    }
+}
+ 
+@keyframes hiddenPopUp{
+    0%{
+        opacity: 1;
+        top:20%;
+        transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(-10deg);
+    }
+    100%{
+        opacity: 0;
+        top:-60%;
+        transform: rotateZ(0deg);
+    }
+}
+
+
+#select{
+    width: 840px;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    overflow: hidden;
+    border: #c9c9c9 5px solid;
+    transition: all 0.3s;
+    position: relative;
+}
+#select1{ 
+    width: 820px;
+    height: 380px;
+    
+}
+#select3{ 
+    width: 0px;
+    height: 380px;
+    text-align: center
+}
+#select2{
+    padding: 120px 0px;
+    width: 20px;
+    height: 380px;
+    cursor: pointer;
+    background-color: rgb(192, 218, 218);
+}
+
+#select33{
+    width: 820px;
+    height: 380px;
+    border: 0px solid;
+}
+
+#tab{
+    position: absolute;
+    left: 50px;
+    margin: 16px auto;
+    width: 720px;
+    padding: 0px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+#tab li{
+    list-style: none;
+    margin: 1px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+}
+#tab li:hover{
+    background-color: rgb(230, 126, 152);
+}
+#tab li{
+    background: rgb(235, 143, 227);
+}
+#tab li a{
+    color: #fff;
+    text-decoration: none;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#content{
+    height: 380px;
+    width: 820px;
+}
+#content1,#content2,#content3,#content4,#content5,#content6{
+    height: 380px;
+    width: 820px;
+    padding-top: 80px;
+    display: none;
+}
+.cont img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.cont{
+    display: inline-block;
+    margin: 20px;
+    width: 200px;
+    height: 221px;
+    cursor: pointer;
+}
+.cont div{
+    height: 25px;
+    overflow: hidden;
+}
+.cont1{
+    height: 25px;
+}
+.cont2{
+    height: 25px;
+}
+#content1{
+    display: block;
+}
+#mymain{
+	width:820px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight:800;
+}
+#all{
+    width: 820px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+#all1{
+    display: inline-block;
+    font-weight: 500;
+}
+#all2{
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    font-weight: 500;
+}
+#all button{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    padding: 0px;
+    cursor: pointer;
+    font-weight: 500;
+}
+#data{
+    width: 820px;
+    height: 230px;
+    overflow-y: scroll;
+    margin-bottom:50px; 
+}
+.database{
+    margin: 0 auto;
+    width: 800px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+}
+.database div{
+    width: 200px;
+    height: 50px;
+}
+.database .data3 button{
+    margin: auto 10px;
+}

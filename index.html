@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>渝州饭店</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.4.1.js"></script>
+</head>
+<body onload="init()">
+    <div id="wrap">
+        <!-- 头部开始 -->
+        <div id="tb">
+            <img src="./images/flow/1.jpg" alt="" id="lunbotu">
+                <div id="top">
+                    <div id="logo">
+                        <img id="images-logo" src="./images/logo.jpg" width="100px" height="100px" />
+                    <div>Hello, welcome to Yuzhou hotel.</div>
+         	    </div>
+            </div>
+        </div>
+        <!-- 头部结束 -->
+        <!-- 中部开始 -->
+        <div id="main">
+            <p id="pinpai">品牌特色</p>
+            <div id="tese">
+                <div id="test1">
+                    <div id="ts">
+                        <img src="./images/icon-1.png" alt="">
+                    </div>
+                    <div id="test2">
+                        <h2>口味</h2>
+                        <h3>KOUWEI</h3>
+                        <P>味道要经过沉淀才能成熟XXX项目以中创永信（北京）食品科学研究院13年如一日从原料，腌料，串法，烤法，蘸料多方面潜心钻研。</P>
+                    </div>
+                </div>
+                <div id="test1">
+                    <div id="ts">
+                        <img src="./images/icon-2.png" alt="">
+                    </div>
+                    <div id="test2">
+                        <h2>品味</h2>
+                        <h3>PINWEI</h3>
+                        <P>不平庸，不盲从，不怕错敢去做是90后和00后的时代特征，XXX从青春的品牌故事，创新的菜品口味，亮眼的包装，多个方面为年轻群体打造属于自己的烧烤店。</P>
+                    </div>
+                </div>
+                <div id="test1">
+                    <div id="ts">
+                        <img src="./images/icon-3.png" alt="">
+                    </div>
+                    <div id="test2"> 
+                        <h2>回味</h2>
+                        <h3>HUIWEI</h3>
+                        <P>再好的青春，回忆的次数多了味道也就淡了。XXX用心将青春的味道化作一道道美食完整的保留下来，为每位食客记录记忆中的青春，让每次回忆逗有滋有味。</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <p id="pinpai">新品推荐</p>
+            <div id="xinpintuijian">
+                <div id="xinpin-1">
+                    <div id="div-1">
+                        <div class="xinpin-img"><img src="./images/caomeibudingbei.jpg" alt=""></div>
+                        <div id="xinpin-div">草莓布丁杯</div>
+                    </div>
+                    <div id="div-1">
+                        <div class="xinpin-img"><img src="./images/fanqiehuiyimian.jpg" alt=""></div>
+                        <div id="xinpin-div">番茄烩意面</div>
+                    </div>
+                    <div id="div-1">
+                        <div class="xinpin-img"><img src="./images/feiliheijiaoniupai.jpg" alt=""></div>
+                        <div id="xinpin-div">菲力黑椒牛排</div>
+                    </div>
+                </div>
+                <div id="xinpin-1">
+                    <div id="div-1">
+                        <div class="xinpin-img"><img src="./images/haixianzhishidalongxia.jpg" alt=""></div>
+                        <div id="xinpin-div">海鲜芝士大虾</div>
+                    </div>
+                    <div id="div-1">
+                        <div class="xinpin-img"><img src="./images/xianxiangpeigenpisa.jpg" alt=""></div>
+                        <div id="xinpin-div">鲜香培根比萨</div>
+                    </div>
+                    <div id="div-1">
+                        <div class="xinpin-img"><img src="./images/xiaojinpaiyimian.jpg" alt=""></div>
+                        <div id="xinpin-div">香煎排意面</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 中部结束 -->
+        <!-- 尾部开始 -->
+        <div id="foot">
+            <div id="foot-main">
+                <p id="pinpai">友情链接</p>
+                <div id="foot-div">
+                    <div><a href="#"><img src="./images/link1.png" alt=""></a></div>
+                    <div><a href="#"><img src="./images/link2.png" alt=""></a></div>
+                    <div><a href="#"><img src="./images/link3.png" alt=""></a></div>
+                    <div><a href="#"><img src="./images/link4.png" alt=""></a></div>
+                    <div><a href="#"><img src="./images/link5.png" alt=""></a></div>
+                    <div><a href="#"><img src="./images/link6.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 弹窗部分 -->
+    <div id="board">
+        <div>
+            <span>菜</span>
+            <span>单</span>
+        </div>
+    </div>
+    <div class="popUp">
+            <h1>点菜系统</h1>
+            <div id="select">
+                <div id="select1">
+                    <ul id="tab">
+                        <li><a href="#content1">招牌</a></li>
+                        <li><a href="#content2">凉菜</a></li>
+                        <li><a href="#content3">热菜</a></li>
+                        <li><a href="#content4">小吃</a></li>
+                        <li><a href="#content5">主食</a></li>
+                        <li><a href="#content6">汤品</a></li>
+                    </ul>
+                    <div id="content">
+                        <div id="content1">
+                            <div class="cont">
+                                <img src="./images/caipu/ganbiansijidou.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="1">干煸四季豆</div>
+                                    <div class="cont2">￥30.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/chongqingdouhuayu.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="2">重庆豆花鱼</div>
+                                    <div class="cont2">￥30.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/yusonghuashousi.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="3">鱼松花寿司</div>
+                                    <div class="cont2">￥25.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content2">
+                            <div class="cont">
+                                <img src="./images/caipu/bingjixianxing.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="4">冰极鲜杏</div>
+                                    <div class="cont2">￥15.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/bingxuedannanguo.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="5">冰雪蛋奶南瓜</div>
+                                    <div class="cont2">￥15.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/guojiangbingqiling.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="6">果酱冰淇凌</div>
+                                    <div class="cont2">￥15.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content3">
+                            <div class="cont">
+                                <img src="./images/caipu/bailuobuwanzi.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="7">白萝卜素丸子</div>
+                                    <div class="cont2">￥30.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/xianglaganguopaigu.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="8">香辣干锅排骨</div>
+                                    <div class="cont2">￥30.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/malaniuwahuoguo.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="9">麻辣牛蛙火锅</div>
+                                    <div class="cont2">￥50.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content4">
+                            <div class="cont">
+                                <img src="./images/caipu/xianfengdangao.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="10">戚风蛋糕</div>
+                                    <div class="cont2">￥25.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/caiwenzhishidangao.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="11">彩纹芝士蛋糕</div>
+                                    <div class="cont2">￥25.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/niunaitusimianbao.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="12">牛奶吐司面包</div>
+                                    <div class="cont2">￥25.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content5">
+                            <div class="cont">
+                                <img src="./images/caipu/haixiangalichaofan.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="13">海鲜咖喱炒饭</div>
+                                    <div class="cont2">￥20.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/mantou.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="14">馒头</div>
+                                    <div class="cont2">￥25.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/mifan.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="15">米饭</div>
+                                    <div class="cont2">￥5.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="content6">
+                            <div class="cont">
+                                <img src="./images/caipu/baiheyinertiantang.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="16">百合银耳甜汤</div>
+                                    <div class="cont2">￥10.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/yangroutang.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="17">羊肉汤</div>
+                                    <div class="cont2">￥10.00</div>
+                                </div>
+                            </div>
+                            <div class="cont">
+                                <img src="./images/caipu/xuelaihuangyutang.jpg" alt="">
+                                <div>
+                                    <div class="cont1" value="18">雪莱黄鱼汤</div>
+                                    <div class="cont2">￥10.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="select2"> &lt;我的菜单&lt;</div>
+                <div id="select3">
+                	<div id="select33">
+                        <div id="mymain">我的菜单</div>
+                        <div id="data">
+                            <div class="database">
+                                <div class="data1">菜品名称</div>
+                                <div class="data2">单价</div>
+                                <div class="data3">数量</div>
+                                <div class="data4">小计</div>
+                                <div class="data5">取消订单</div>
+                            </div>
+                        </div>
+	                    <div id="all">
+	                        <div id="all1">总计</div>
+	                        <div id="all2">￥0.00</div>
+	                        <button>支付</button>
+	                    </div>
+                	</div>
+                </div>
+            </div>
+        <button class="closePopUpBtn" id="closeBtn">关闭</button>
+    </div>
+    <div id="chucun" style="display:none"></div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
